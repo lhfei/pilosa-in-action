@@ -1,0 +1,21 @@
+server:
+  port: 12000
+  servlet:
+    context-path: /api/v1
+logging:
+  level:
+    .: info
+    cn.lhfei.bitmap.pilosa: info
+    org.springframework: info
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    max-size: 1024M
+
+  
+swagger:
+  enabled: true
+
+pilosa:
+  url: 100.83.190.65:10101
